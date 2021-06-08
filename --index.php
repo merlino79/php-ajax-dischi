@@ -37,7 +37,7 @@
 ?>
 
 <ul>
-  <?php foreach($response as $disco){ ?>
+  <?php foreach($database as $disco){ ?>
 
     <li>
       <?php echo $disco['title'] ?>

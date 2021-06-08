@@ -14,7 +14,7 @@ const app = new Vue({
     mounted() {
         axios.get('http://localhost:8888/php-ajax-dischi/data/api.php')
             .then((res) => {
-                this.disci = res.data;
+                this.dischi = res.data.database;
                 console.log(res.data);
             })
             //per vedere errori nelle chiamtae api        
