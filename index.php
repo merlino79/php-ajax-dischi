@@ -14,10 +14,21 @@
 <body>
 
 <?php 
-$nome = 'ale';
-var_dump($response);
+
+//var_dump($response);
 ?>
-  
+
+<ul>
+  <?php foreach($response as $disco){ ?>
+
+    <li>
+      <?php echo $disco['title'] ?>
+      <?php echo $disco['author'] ?>
+      <?php echo $disco['poster'] ?>
+    </li>
+
+  <?php } ?>
+</ul>
   
   
  
