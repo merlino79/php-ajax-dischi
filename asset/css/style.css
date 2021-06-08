@@ -5,15 +5,21 @@
 }
 
 body {
-    background-color: #bd8216;
+    background-color: #1a1919;
+    color: white;
 }
 
-input {
-    display: block;
-    margin: 10px;
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(31, 30, 30);
 }
 
-input:focus {
-    outline: 0;
-    ;
+.logo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
 }
