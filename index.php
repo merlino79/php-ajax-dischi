@@ -1,5 +1,5 @@
  <?php
-    require_once __DIR__ . '/data/db.php';
+    require_once __DIR__ . '/data/dba.php';
 ?> 
 
 
@@ -19,7 +19,7 @@
 ?>
 
 <ul>
-  <?php foreach($response as $disco){ ?>
+  <?php foreach($database as $disco){ ?>
 
     <li>
       <?php echo $disco['title'] ?>
