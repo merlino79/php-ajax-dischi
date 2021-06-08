@@ -28,26 +28,35 @@
 
 </div>
 
+
 </header>
 
+<main>
+<div class="container">
 
-<?php 
 
-//var_dump($response);
-?>
 
-<ul>
-  <?php foreach($database as $disco){ ?>
+  <div class="box-albums">
+      <?php foreach($database as $disco){ ?>
+      <div class="album">  
+          <img src="<?php echo $disco['poster'] ?>" alt="">     
+          <h2> <?php echo $disco['author'] ?> </h2>
+          
+          <h4> <?php echo $disco['title'] . ' - ' . $disco['year'] ?> </h4>
+      </div>
+      <?php } ?>
+    </div>
 
-    <li>
-      <?php echo $disco['title'] ?>
-      <?php echo $disco['author'] ?>
-      <img src="<?php echo $disco['poster'] ?>" alt="">
-    </li>
 
-  <?php } ?>
-</ul>
+
+
   
+</div>
+
+</main>
+
+
+
   
  
   
