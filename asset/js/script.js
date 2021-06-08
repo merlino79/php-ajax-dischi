@@ -1,15 +1,27 @@
 const app = new Vue({
     el: '#app',
     data: {
-        messaggio: "ciao",
+
+        dischi: [],
+        mess: 'ciao',
 
 
-        header('Content-Type: application/json');
 
 
 
 
-    }
+    },
+    mounted() {
+        axios.get('http://localhost:8888/php-ajax-dischi/data/api.php')
+            .then((res) => {
+                this.disci = res.data;
+                console.log(res.data);
+            })
+            //per vedere errori nelle chiamtae api        
+            .catch((err) => {
+                console.log(err);
+            })
+    },
 
 });
 
