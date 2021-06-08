@@ -3,6 +3,12 @@ const app = new Vue({
     data: {
         messaggio: "ciao",
 
+
+        header('Content-Type: application/json');
+
+
+
+
     }
 
 });
