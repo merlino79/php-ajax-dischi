@@ -23,7 +23,7 @@
 
             <div class="generi">
 
-                <select v-model="genreToSearch" name="" id="generi">
+                <select @change="getAPI" v-model="genreToSearch" name="" id="generi">
                     <option value="all">
                       <srong>seleziona un genere</<strong>
                     </option>
