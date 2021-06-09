@@ -9,7 +9,7 @@ foreach($database as $album){
     $genres[] = $album['genre'];
   }
 }
-var_dump($genres);die;
+//var_dump($genres);die;
 
 
 
@@ -18,7 +18,7 @@ header('Content-Type: application/json');
 
 $response = [
   'albums' => $database,
-  'genres' => []
+  'genres' => $genres
 ];
 
 echo json_encode($response);

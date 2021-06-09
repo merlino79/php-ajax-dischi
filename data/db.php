@@ -32,6 +32,7 @@
             'title' => 'Brave new World',
             'author' => 'Iron Maiden',
             'year' => 2000,
+            "genre" => "metal",
             'poster' => 'https://images-na.ssl-images-amazon.com/images/I/810nSIQOLiL._SY355_.jpg'
         ],
         [
