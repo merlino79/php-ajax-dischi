@@ -11,7 +11,7 @@ const app = new Vue({
         getAPI() {
             axios.get(this.apiURL, )
                 .then((res) => {
-                    this.dischi = res.data;
+                    this.dischi = res.data.albums;
                     console.log(res.data);
                 })
                 //per vedere errori nelle chiamtae api        
