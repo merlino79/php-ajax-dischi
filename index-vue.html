@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 
     <title>Document</title>
@@ -12,34 +13,73 @@
 
 <body>
 
+    <header>
+
+        <div class="logo">
+            <img src="asset/img/logo.jpg" alt="">
+        </div>
+
+        <div class="generi">
+            <select name="" id="generi">
+        <option value="">
+          <srong>rock</<strong>
+        </option>
+        <option value="">
+          <srong>metal</<strong>
+        </option>
+        <option value="">
+          <srong>classic</<strong>
+        </option>
+      </select>
+
+        </div>
+
+
+    </header>
+
+    <main>
+
+
+    </main>
+
 
 
     <div id="app">
 
-        <h1>
-            {{mess}}
-        </h1>
-        <h1 v-for="disco in dischi">
+        <div class="container">
+
+
+
+            <div class="box-albums">
+
+                <div v-for="disco in dischi" class="album">
+                    <img :src="disco.poster" :alt="disco.title">
+                    <h2>
+                        {{disco.author}}
+                    </h2>
+
+                    <h4>
+                        {{disco.title}}
+                    </h4>
+                </div>
+
+            </div>
 
 
 
 
 
-            {{disco.author}}
+        </div>
 
-
-
-        </h1>
-
-
+    </div>
 
 
 
 
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-        <script src="asset/js/script.js"></script>
+    <script src="asset/js/script.js"></script>
 
 </body>
 
