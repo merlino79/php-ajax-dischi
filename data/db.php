@@ -13,7 +13,7 @@
             'poster' => 'https://images-na.ssl-images-amazon.com/images/I/71g40mlbinL._SX355_.jpg'
         ],
         [
-            'title' => 'Ten\'s Summoner\'s Tales',
+            'title' => 'Ten Summoner  Tales',
             'author' => 'Sting',
             'year' => 1993,
             'poster' => 'https://images-na.ssl-images-amazon.com/images/I/411BQR6BHRL.jpg'

@@ -3,7 +3,7 @@ const app = new Vue({
     data: {
 
         dischi: [],
-        mess: 'ciao',
+        mess: 'errore nell\'url',
 
 
 
@@ -14,7 +14,7 @@ const app = new Vue({
     mounted() {
         axios.get('http://localhost:8888/php-ajax-dischi/data/api.php')
             .then((res) => {
-                this.dischi = res.data.database;
+                this.dischi = res.data;
                 console.log(res.data);
             })
             //per vedere errori nelle chiamtae api        
