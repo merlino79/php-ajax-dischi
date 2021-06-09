@@ -54,14 +54,14 @@
 
                 <div class="box-albums">
 
-                    <div v-for="disco in dischi" class="album">
-                        <img :src="disco.poster" :alt="disco.title">
+                    <div v-for="album in albums" class="album">
+                        <img :src="album.poster" :alt="album.title">
                         <h2>
-                            {{disco.author}}
+                            {{album.author}}
                         </h2>
 
                         <h4>
-                            {{disco.title}}
+                            {{album.title}}
                         </h4>
                     </div>
 

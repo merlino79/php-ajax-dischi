@@ -3,7 +3,7 @@ const app = new Vue({
     el: '#app',
     data: {
 
-        dischi: [],
+        albums: [],
         apiURL: 'http://localhost:8888/php-ajax-dischi/data/api.php'
     },
 
@@ -11,7 +11,7 @@ const app = new Vue({
         getAPI() {
             axios.get(this.apiURL, )
                 .then((res) => {
-                    this.dischi = res.data.albums;
+                    this.albums = res.data.albums;
                     console.log(res.data);
                 })
                 //per vedere errori nelle chiamtae api        
