@@ -4,15 +4,22 @@ const app = new Vue({
     data: {
 
         albums: [],
+        genres: [],
+        genreToSearch: 'all',
         apiURL: 'http://localhost:8888/php-ajax-dischi/data/api.php'
     },
 
     methods: {
         getAPI() {
-            axios.get(this.apiURL, )
+            axios.get(this.apiURL, {
+                    params: {
+                        genre: this.genreToSearch
+                    }
+                })
                 .then((res) => {
                     this.albums = res.data.albums;
-                    console.log(res.data);
+                    this.genres = res.data.genres;
+                    console.log(this.genres);
                 })
                 //per vedere errori nelle chiamtae api        
                 .catch((err) => {

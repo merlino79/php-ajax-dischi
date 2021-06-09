@@ -22,17 +22,20 @@
             </div>
 
             <div class="generi">
-                <select name="" id="generi">
-            <option value="">
-              <srong>rock</<strong>
-            </option>
-            <option value="">
-              <srong>metal</<strong>
-            </option>
-            <option value="">
-              <srong>classic</<strong>
-            </option>
-          </select>
+
+                <select v-model="genreToSearch" name="" id="generi">
+                    <option value="all">
+                      <srong>seleziona un genere</<strong>
+                    </option>
+                    <option 
+                      v-for="genre in genres"
+                      value="genre">
+                      <srong>
+                        {{genre}}
+                      <strong>
+                    </option>
+                    
+              </select>
 
             </div>
 
